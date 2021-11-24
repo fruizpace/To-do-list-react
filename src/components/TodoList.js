@@ -1,10 +1,22 @@
 import React from "react";
 import Todo from "./Todo";
 
-const TodoList = () => {
+const TodoList = ({ todos, setTodos, filteredTodos }) => {
   return (
     <div className="todo-container">
-      <ul className="todo-list"></ul>
+      <ul className="todo-list">
+        {filteredTodos.length === 0
+          ? "To-do's List is empty!"
+          : filteredTodos.map((todo) => (
+              <Todo
+                key={todo.id}
+                text={todo.text}
+                todos={todos}
+                setTodos={setTodos}
+                todo={todo}
+              />
+            ))}
+      </ul>
     </div>
   );
 };
