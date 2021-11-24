@@ -1,4 +1,4 @@
-# To-Do's List: Primer proyecto usando REACT
+# To-Do's List: Proyecto usando REACT (nivel principiantes)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
